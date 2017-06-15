@@ -1,6 +1,13 @@
 # 一、概念介绍
 - 线程安全就是多线程访问时，采用了加锁机制，当一个线程访问该类的某个数据时，进行保护，其他线程不能进行访问直到该线程读取完，其他线程才可使用。不会出现数据不一致或者数据污染
 - 线程不安全就是不提供数据访问保护，多线程先后更改数据会产生数据不一致或者数据污染的情况
+- 线程安全的集合对象
+    1. ArrayList线程不安全，Vector线程安全；
+    2. HashMap线程不安全，HashTable线程安全；
+    3. hashMap 非synchronized hashtable 使用synchronized
+    4. 单一线程用hashmap比hashtable快多了
+    实现hashmap同步 Map m = Collections.synchronizeMap(hashMap);
+    5. StringBuilder线程不安全，StringBuffer线程安全。
 - 一般使用synchronized关键字加锁同步控制，来解决线程不安全问题。
 - ![image](http://note.youdao.com/yws/res/1833/3A17AACDC0A34C7FBFCD60A460CC9046)
 # Collection接口
