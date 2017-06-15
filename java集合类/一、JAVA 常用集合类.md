@@ -17,7 +17,7 @@ ArrayList和LinkedList在用法上没有区别，但是在功能上还是有区�
 1. ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构。 
 2. 对于随机访问get和set，ArrayList觉得优于LinkedList，因为LinkedList要移动指针
 3. 对于新增和删除操作add和remove，LinedList比较占优势，因为ArrayList要移动数据。
-# 六、Map集合
+# 三、Map集合
 > 实现类：HashMap、Hashtable、LinkedHashMap和TreeMap
 
 - **HashMap**,它根据键的HashCode值存储数据，根据键可以直接获取它的值，具有很快的访问速度，遍历时，取得数据的顺序是完全随机的。因为键对象不可以重复，所以HashMap最多只允许一条记录的键为Null，允许多条记录的值为Null，是非同步的
